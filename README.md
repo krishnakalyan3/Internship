@@ -1,4 +1,5 @@
 # Internship - Integrating Renewables in Electricity Markets
 
-##### Links
-1. http://pierrepinson.com/
+#### References
+1. [Coursework : Renewables in Electricity Markets](http://pierrepinson.com/)
+2. [Forecasting: principles and practice](https://www.otexts.org/fpp)
