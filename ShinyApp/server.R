@@ -6,7 +6,7 @@ library(forecast)
 
 shinyServer(function(input, output) {
   
-  
+  # Forecast / Currently UI commented
   output$plot2 <- renderPlot({
     df = choice(input$radio,input$dates[1],input$dates[2])
     ts1 = ts((pmax(df$energy,0)),start=1,frequency = 48)
@@ -14,7 +14,7 @@ shinyServer(function(input, output) {
     plot(m_naive)
   })
   
-  
+  # ggplot Simulator
   output$plot1 <- renderPlot({ 
     df = choice(input$radio,input$dates[1],input$dates[2])
     p = ggplot(df, aes(x=data, y=energy)) +
@@ -70,7 +70,7 @@ shinyServer(function(input, output) {
   }
   
   solar = function(data,jitter){
-    load(file = "/Users/krishna/Experiment/Internship/model/model_temp_year.RData")
+    load(file = "model/model_temp_year.RData")
     # Solar Mean - 200
     t.lub <- ymd_hms(data)
     h.lub <- hour(t.lub)
@@ -85,7 +85,7 @@ shinyServer(function(input, output) {
   }
   
   wind = function(data,jitter){
-    load(file = "/Users/krishna/Experiment/Internship/model/model_speed_year.RData")
+    load(file = "model/model_speed_year.RData")
     # Wind Mean - 300
     df = as.data.frame(data)
     randvalue = runif(nrow(df), -jitter, jitter)

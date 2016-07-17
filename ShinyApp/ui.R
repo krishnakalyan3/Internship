@@ -1,11 +1,10 @@
 library(shiny)
 
-# Define UI for application that draws a histogram
+# UI elements
 shinyUI(fluidPage(
+  # Logo
   img(src='eric.png', align = "right",width=100, height=75),
   titlePanel("Energy Simulator"),
-  
-  
   sidebarLayout(
     sidebarPanel( 
       fluidRow(
@@ -37,7 +36,6 @@ shinyUI(fluidPage(
                br(),
                dataTableOutput("table"))
       #tabPanel("Forecast",br(), plotOutput("plot2"))
-      
       #plotOutput("plot1"),
       #textOutput("chk1")
     )
