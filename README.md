@@ -3,3 +3,7 @@
 #### References
 1. [Coursework : Renewables in Electricity Markets](http://pierrepinson.com/)
 2. [Forecasting: principles and practice](https://www.otexts.org/fpp)
+
+
+#### Applicaton
+[Energy Simulator](https://kkalyan3.shinyapps.io/ShinyApp/)
