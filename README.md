@@ -5,5 +5,5 @@
 2. [Forecasting: principles and practice](https://www.otexts.org/fpp)
 
 
-#### Applicaton
+#### Shiny Applicaton
 [Energy Simulator](https://kkalyan3.shinyapps.io/ShinyApp/)
